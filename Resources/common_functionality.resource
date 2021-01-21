@@ -6,7 +6,7 @@ Library    SeleniumLibrary
 
 *** Variables ***
 
-${BROWSER_NAME}    chrome
+${BROWSER_NAME}    ff
 ${URL}    https://demo.openemr.io/b/openemr/interface/login/login.php?site=default
 
 *** Keywords ***
@@ -16,7 +16,7 @@ Launch Browser
     Maximize Browser Window
     Set Selenium Implicit Wait    30s
     Go To    url=${URL}
-    
+    #wind
 End Browser
     Close Browser
-    
+    #set sele

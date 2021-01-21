@@ -17,12 +17,10 @@ TC1
 *** Keywords ***
 Verify_Valid_Credentials
     [Arguments]    ${username}    ${password}    ${language}    ${expectedvalue}
-
     Enter Username    ${username}    
     Enter Password    ${password}    
     Select Language    ${language}
-    Click Login 
-    
+    Click Login     
     Dashboard Page Should Contain    ${expectedvalue}  
     MouseOver On Name
     Click Logout 

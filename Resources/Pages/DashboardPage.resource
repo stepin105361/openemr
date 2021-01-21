@@ -4,7 +4,7 @@ Documentation    This file deals with all operations in the dashboard page
 Resource    ../common_functionality.resource
 
 *** Variables ***
-${NAME_LOC}    //span[@data-bind="text:fname"]
+${NAME_LOC}    //span[@data-bind="template: {name: 'user-data-template', data: application_data}"]
 ${LOGOUT_LOC}    //li[text()='Logout']
 ${PAT_LOC}    //div[text()='Patient/Client']
 ${PATS_LOC}    //div[text()='Patients']
